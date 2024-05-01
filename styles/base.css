@@ -59,7 +59,7 @@ main {
 /* Grid layout for content */
 .content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-columns: repeat(1, 1fr); /* One column by default */
     gap: 20px; /* Gap between grid items */
 }
 
@@ -112,4 +112,20 @@ footer p {
 
 footer p:last-child {
     margin-bottom: 0;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    /* Two columns layout */
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Three columns layout */
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
