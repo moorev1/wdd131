@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131</title>
-    </head>
-    <body>
-        <h1>WDD 131-Vincent</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Vincent Moore</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Vincent Moore. Insert keyword summary here.">
+    <meta name="author" content="Vincent Moore">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Link to JavaScript with defer attribute -->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>WDD 131 - Dynamic Web Fundamentals - Vincent Moore</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                    <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="content">
+                <section class="about-me">
+                    <div class="intro">
+                        <img src="images/vincent.jpeg" alt="Profile Picture">
+                        <div class="intro-text">
+                            <h2>About Me</h2>
+                            <p>My name is Vincent Moore, and I'm from Ghana. I'm happily married to a beautiful woman whom I adore spending time with. I'm passionate about web development and enjoy diving into new technologies and learning opportunities. On my free time, you can find me exploring the outdoors, reading, or spending quality time with my family.</p>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="ghana-info">
+                    <div class="flag-info">
+                        <img src="images/flag.png" alt="Ghana Flag">
+                        <div class="flag-text">
+                            <h2>About Ghana</h2>
+                            <p>Ghana is a country located in West Africa, known for its rich history and diverse culture. It was the first African country to gain independence from colonial rule in 1957. Ghana is famous for its friendly people, vibrant festivals, and delicious cuisine.</p>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="resources">
+                    <div class="resources-box">
+                        <h2>Web Dev Resources</h2>
+                        <ul>
+                            <li><a href="#">CSS Tricks</a></li>
+                            <li><a href="#">Udemy</a></li>
+                            <li><a href="#">W3 Schools</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentyear"></span> Vincent Moore, Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
 </html>
