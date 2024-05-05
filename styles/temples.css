@@ -1,49 +1,49 @@
 /* Mobile Styles */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Changed font to Helvetica Neue */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #2c3e50; /* Dark blue background */
+  background-color: #2c3e50; 
   color: #fff;
   padding: 10px 20px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 24px; /* Increased font size */
+  font-size: 24px; 
 }
 
 nav {
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: flex-end; 
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Add flex display */
+  display: flex; 
 }
 
 nav ul li {
-  margin-left: 20px; /* Increased margin between links */
+  margin-left: 20px; 
 }
 
 nav ul li:first-child {
-  margin-left: 0; /* Remove margin for the first link */
+  margin-left: 0; 
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px; /* Increased font size */
+  font-size: 16px; 
 }
 
 nav ul li a:hover {
-  background-color: #34495e; /* Darker hover color */
+  background-color: #34495e; 
 }
 
 .menu-icon {
@@ -69,9 +69,9 @@ main {
 }
 
 h2 {
-  text-align: center; /* Center the heading */
-  font-size: 20px; /* Increased font size */
-  margin-bottom: 20px; /* Added spacing below the heading */
+  text-align: center; 
+  font-size: 20px; 
+  margin-bottom: 20px; 
 }
 
 figure {
@@ -81,13 +81,13 @@ figure {
 figure figcaption {
   margin-top: 10px;
   font-style: italic;
-  font-size: 14px; /* Adjusted font size */
-  text-align: center; /* Center the text */
+  font-size: 14px; 
+  text-align: center; 
 }
 
 
 footer {
-  background-color: #34495e; /* Darker background color */
+  background-color: #34495e; 
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -117,7 +117,7 @@ footer {
 
   nav ul li a {
     padding: 10px 20px;
-    font-size: 16px; /* Increased font size */
+    font-size: 16px; 
   }
 
   main {
