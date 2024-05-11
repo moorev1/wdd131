@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Ghana</h1>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <img src="images/weather.webp" alt="Ghana">
+            <div class="info-box data"> <!-- Changed class name from "snow" to "data" -->
+                <h2>Data</h2> <!-- Changed content from "Snow" to "Data" -->
+            </div>
+            <div class="info-box weather"> <!-- Changed class name from "rain" to "weather" -->
+                <i class="weather-icon"><img src="images/icon 2.png" alt="Weather Icon"></i> <!-- Image weather icon -->
+                <p>Weather: Cloudy</p> <!-- Changed "Weather cloudy" to "Weather: Cloudy" -->
+            </div>
+            <div class="info-box data-info"> <!-- Changed class name from "weather-info" to "data-info" -->
+                <p><strong>Area:</strong> 238,533 km²</p>
+                <p><strong>Population:</strong> 34,686,730</p>
+                <p><strong>Capital:</strong> Accra</p>
+                <p><strong>Languages:</strong> English</p>
+                <p><strong>Currency:</strong> Cedis</p>
+                <p><strong>Time Zone:</strong> Greenwich Mean Time</p>
+                <p><strong>Dial Code:</strong> +233</p>
+            </div>
+            <div class="info-box weather-info"> <!-- Changed class name from "data" to "weather-info" -->
+                <p><strong>Temperature:</strong> 28°C</p>
+                <p><strong>Condition:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 18 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Ghana | Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
