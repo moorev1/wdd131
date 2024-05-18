@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the current year and last modified date
+document.addEventListener("DOMContentLoaded", function() {   
     const currentYear = new Date().getFullYear();
     const lastModified = document.lastModified;
 
