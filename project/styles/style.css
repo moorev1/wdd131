@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sofia+Sans+Extra+Condensed:wght@600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-color: #e1dee3;
+    color: #333;
+}
+
+main {
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+}
+
+/* Message Box Styles */
+.elvis-msg-container,
+.brooke-msg-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.newsletter {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #3a4f41;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.elvis,
+.brook {
+    width: 400px;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 8px;
+}
+
+.msg,
+.msg-brooke {
+    flex: 1;
+    width: 30%;
+    box-shadow: 5px 5px 10px #6f7364;
+    background-color: #d5a18e;
+    color: #fff;
+    padding: 35px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hover Effect for Links */
+a:hover {
+    color: #429ab4;
+}
+
+/* ... (existing styles) ... */
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2em;
+}
+
+nav {
+    background-color: #3a4f41;
+    padding: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    margin-right: 2em;
+}
+
+nav .logo {
+    max-width: 100px;
+}
+
+/* Header styles */
+header {
+    color: rgb(20, 67, 100);
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+
+/* Main Content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-align: center;
+}
+
+#home1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home1-box {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+#home1-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.recipes-section {
+    background-color: #E1DEE3;
+    padding: 2em;
+    margin-left: -7em;
+    margin-right: -7em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.recipe-header {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #3a4f41;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recipe-description {
+    margin-top: 10px;
+    color: #666;
+}
+
+.chef-container,
+.chef-container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chef-info,
+.chef-info2 {
+    max-width: 400px;
+    text-align: center;
+}
+
+.chef-info p,
+.chef-info2 p {
+    margin: 0;
+}
+
+.chef-container img,
+.chef-container2 img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive styles... */
+
+.left-box,
+.right-box {
+    flex: 1;
+    padding: 10px;
+}
+
+.center-box {
+    margin: 0 10%;
+    overflow: hidden;
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 450px;
+    transform: rotate(90deg);
+}
+
+.text-under-image {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.text-box {
+    padding: 10px;
+}
+
+.join-us-section {
+    text-align: center;
+    margin-top: 1em;
+}
+
+button.join-us-button {
+    background-color: #3a4f41;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.section-wireframes {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.featured-recipes-section {
+    padding: 2em;
+    background-color: #55d6be;
+    color: #429ab4;
+}
+/* Add this to your existing CSS file or in a new style block in the head */
+
+.join-us-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.join-us-section h2 {
+    font-size: 24px;
+}
+
+.join-us-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.join-us-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .join-us-section {
+        padding: 10px;
+    }
+
+    .join-us-section h2 {
+        font-size: 20px;
+    }
+
+    .join-us-section p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .join-us-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonials-section {
+    background-color: #889ec7;
+    color: black;
+    padding: 2em;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #e1dee3;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3a4f41;
+    color: white;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    margin-right: 10px;
+}
+
+.social img {
+    max-width: 30px;
+    margin: 0 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    main {
+        padding: 1em;
+    }
+
+    .recipe-container,
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .recipe-card,
+    .testimonial-card {
+        width: 100%;
+    }
+}
