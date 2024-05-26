@@ -10,6 +10,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+.hidden-nav {
+    display: none;
+}
+
 
 .form-container, .confirmation-container {
     background-color: #E0DBE3;

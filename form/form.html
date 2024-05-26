@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
-    <nav>
+    <!-- Navigation Bar (Hidden) -->
+    <nav class="hidden-nav">
         <ul>
-            <li><a href="form.html">form</a></li>
+            <li><a href="form.html">Form</a></li>
             <li><a href="review.html">Review</a></li>
         </ul>
     </nav>
+
     <div class="form-container">
         <h1>Product Review</h1>
         <form id="review-form" action="review.html" method="get">
@@ -59,7 +61,6 @@
 
             <!-- Written Review -->
             <label for="written-review">Written Review <small>(Optional)</small></label>
-            
             <textarea id="written-review" name="written-review"></textarea>
 
             <!-- User Name -->
@@ -71,13 +72,12 @@
         </form>
     </div>
     <footer>
-        <p>©2024 🌺 Vincent Moore🌺 Ghana</p>
+        <p>©2024 🌺 Vincent Moore 🌺 Ghana</p>
         <p>Last Modification: <span id="last-modification-date"></span></p>
     </footer>
     <script src="js/script.js"></script>
     <script>
         document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
     </script>
-    
 </body>
 </html>
