@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Product Review</h1>
+        <form id="review-form" action="review.html" method="get">
+            <!-- Product Name -->
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name" required>
+                <option value="Product A">Product A</option>
+                <option value="Product B">Product B</option>
+                <option value="Product C">Product C</option>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <label for="rating">Overall Rating</label>
+            <div id="rating" class="rating">
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+            </div>
+
+            <!-- Date of Installation -->
+            <label for="installation-date">Date of Installation</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <!-- Useful Features -->
+            <label>Which features did you find useful in the product? <small>(Check all that apply)</small></label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature1" name="useful-features" value="Durability">
+                <label for="feature1">Durability</label>
+                <input type="checkbox" id="feature2" name="useful-features" value="Ease of Use">
+                <label for="feature2">Ease of Use</label>
+                <input type="checkbox" id="feature3" name="useful-features" value="Performance">
+                <label for="feature3">Performance</label>
+                <input type="checkbox" id="feature4" name="useful-features" value="Design">
+                <label for="feature4">Design</label>
+            </div>
+
+            <!-- Written Review -->
+            <label for="written-review">Written Review <small>(Optional)</small></label>
+            
+            <textarea id="written-review" name="written-review"></textarea>
+
+            <!-- User Name -->
+            <label for="user-name">Your Name <small>(Optional)</small></label>
+            <input type="text" id="user-name" name="user-name">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Post Review">
+        </form>
+    </div>
+    <footer>
+        <p>©2024 🌺 Vincent Moore🌺 Ghana</p>
+        <p>Last Modification: <span id="last-modification-date"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
+    </script>
+    
+</body>
+</html>
