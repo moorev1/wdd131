@@ -2,34 +2,97 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="utf-8">
-  <title>Blog - Zara Delight</title>
-  <link rel="stylesheet" href="styles/site-plan.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Add any custom styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Add more styles as needed */
+        /* ... */
+    </style>
 </head>
 
 <body>
-  <nav>
-    <div class="nav-links">
-      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
-      <a class="active" href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
-      <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-      <a href="siteplan.html"><i class="fa fa-fw fa-file-text"></i> Site Plan</a>
-    </div>
-  </nav>
-  <header>
-    <h1>Blog</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Food Stories and Tips</h2>
-      <p>Dive into our blog for food stories, tips, and culinary insights. Zara Delight offers engaging content to enhance your cooking journey.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Zara Delight. All rights reserved.</p>
-  </footer>
+    <nav class="navigation">
+        <a href="index.html" class="nav-link">
+            <img src="images/logo.jpeg" alt="Logo image" class="logo">
+        </a>
+        <div class="nav-links">
+          <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a class="active" href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
+          <a href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
+          <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            </div>
+    </nav>
+
+    <main>
+        <section class="intro-section">
+            <hr>
+            <h2>Welcome to Our Culinary Journey</h2>
+            <p>Explore the artistry of flavors and the richness of culinary tales in our Foodie Tales section. Immerse yourself
+                in a world where each dish tells a unique story, bringing you closer to the heart of gastronomy.</p>
+            <p>Discover the essence of our culinary experiences through captivating narratives and stunning visuals.</p>
+        </section>
+        
+
+        <div class="elvis-msg-container">
+            <img class="elvis" src="images/rice.jpeg" alt="Elvis image for page 3">
+            <section class="msg">
+                <h2>Savoring Culinary Delights</h2>
+                <p>Indulge in a feast for the senses. From farm-fresh ingredients, savory spices, to mouthwatering presentations; it's way more than just a meal. It's a delightful journey through the flavors of the culinary world.</p>
+            </section>
+        </div>
+
+        <div class="brooke-msg-container">
+            <section class="msg-brooke">
+                <h2>A Culinary Voyage by Chef Sire</h2>
+        <p>Join Chef Sire as she explores the art of gastronomy. From farm-to-table experiences to unique cooking
+            techniques, discover the secrets that make each dish a masterpiece.</p>
+            </section>
+            <img class="brook" src="images/stew.jpeg" alt="Brooke image for page 3">
+        </div>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest recipes and foodie tales.</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+      <p>Zara Delight &copy; 2024 - Vincent Moore</p>
+      <p>Last Modification: <span id="last-modification-date"></span></p>
+
+        <p><a href="siteplan.html">Site Plan</a></p>
+        <p><a href="terms-and-services.html">Terms and Services</a></p>
+        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+  <script>
+      document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
+  </script>
 </body>
 
 </html>

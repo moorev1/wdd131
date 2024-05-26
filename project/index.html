@@ -2,34 +2,125 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="utf-8">
-  <title>Home - Zara Delight</title>
-  <link rel="stylesheet" href="styles/site-plan.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Home </title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body>
-  <nav>
-    <div class="nav-links">
-      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Group 1: Navigation with Logo -->
+    <nav class="navigation">
+        <img src="images/logo.jpeg" alt="Logo image" class="logo">
+       <div class="nav-links">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="active" href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
       <a href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
       <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-      <a href="siteplan.html"><i class="fa fa-fw fa-file-text"></i> Site Plan</a>
-    </div>
-  </nav>
-  <header>
-    <h1>Welcome to Zara Delight</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>Zara Delight is designed to celebrate the art of cooking and infuse joy into your dining experiences. Our platform caters to both seasoned chefs and kitchen novices, offering a haven for recipes, engaging food stories, and immersive culinary journeys.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Zara Delight. All rights reserved.</p>
-  </footer>
+        </div>
+    </nav>
+    <!-- Group 2: Header -->
+    <header>
+        <div id="home1">
+            <div id="home1-box">
+                <img src="images/yummy.jpeg" alt="home1 image" class="home1">
+            </div>
+        </div>
+    </header>
+
+    <!-- Group 3: Main Content -->
+    <main>
+        <!-- Section 1 - Introduction -->
+        <section class="recipes-section">
+            <header>
+                <h2>Explore Recipes</h2>
+            </header>
+            <p>Indulge in a plethora of mouth-watering recipes curated for every taste bud. From savory delights to sweet treats, Recipes Galore has it all.</p>
+
+            <div class="image-container">
+                <div class="box left-box">
+                    <div class="text-box">
+                        <header>
+                            <h3>Welcome to Zara Delight</h3>
+                        </header>
+                        <p>
+                          Zara Delight is your ultimate destination for celebrating the art of cooking and infusing joy into your dining experiences. Whether you're a seasoned chef or a kitchen novice, our platform offers a haven for recipes, engaging food stories, and immersive culinary journeys.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="center-box">
+                    <img src="images/springrose.jpeg" alt="home2 image for homepage" class="center-image">
+                    <div class="text-under-image">
+                        <p>
+                            Join Us and enjoy good Recipe.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box right-box">
+                    <div class="text-box">
+                        <header>
+                            <h3>Explore Culinary Creations</h3>
+                        </header>
+                        <p>
+                            Explore the delightful world of culinary creations with Recipes Hub. Join our community and discover a blend of recipes, stories, and ingredient showcases that will inspire and captivate, bringing the joy of cooking and the pleasures of the dining table to your fingertips.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us section -->
+        <section class="join-us-section">
+            <header>
+                <h2>Join Us Today</h2>
+            </header>
+            <div class="center">
+                <button class="join-us-button">Join Us</button>
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section class="testimonials-section">
+            <header>
+                <h2>What Our Community Says</h2>
+            </header>
+            <div class="testimonial-container">
+                <!-- Testimonial cards go here -->
+                <div class="testimonial-card">
+                    <p>"Zara Delight has transformed my cooking experience. The recipes are easy to follow, and the community is so supportive!"</p>
+                    <p>- Vincent M.</p>
+                </div>
+                <!-- more testimonial cards will be added -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Group 4: Footer -->
+    <footer>
+      <p>Zara Delight &copy; 2024 - Vincent Moore</p>
+      <p>Last Modification: <span id="last-modification-date"></span></p>
+
+        <p><a href="siteplan.html">Site Plan</a></p>
+        <p><a href="terms-and-services.html">Terms and Services</a></p>
+        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+  <script>
+      document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
+  </script>
 </body>
 
 </html>

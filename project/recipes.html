@@ -2,34 +2,69 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="utf-8">
-  <title>Recipes - Zara Delight</title>
-  <link rel="stylesheet" href="styles/site-plan.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Home </title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body>
-  <nav>
-    <div class="nav-links">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Group 1: Navigation with Logo -->
+    <nav class="navigation">
+        <img src="images/logo.jpeg" alt="Logo image" class="logo">
+       <div class="nav-links">
       <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
       <a class="active" href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
       <a href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
       <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-      <a href="siteplan.html"><i class="fa fa-fw fa-file-text"></i> Site Plan</a>
-    </div>
-  </nav>
-  <header>
-    <h1>Recipes</h1>
-  </header>
+        </div>
+    </nav>
   <main>
+    <hr>
     <section>
-      <h2>Our Favorite Recipes</h2>
-      <p>Explore a variety of recipes, from quick weeknight dinners to gourmet meals. Zara Delight brings you a curated collection of culinary delights to try at home.</p>
+        <h3>Exquisite Culinary Creations</h3>
+
+        <div class="chef-container">
+            <img src="images/beans.jpeg" alt="Image for page">
+            <div class="chef-info">
+                <p><strong>Culinary Expertise Unleashed</strong></p>
+                <p>Meet Olaitan, our seasoned chef with a passion for creating mouthwatering dishes that tantalize the taste buds. Dive into the world of flavors and techniques as Jason shares his culinary journey and favorite recipes.</p>
+            </div>
+        </div>
+
+        <div class="chef-container2">
+            <img src="images/fish.jpeg" alt="Image for page">
+            <div class="chef-info2">
+                <p><strong>Embark on an Eco-Culinary Journey</strong></p>
+                <p>Meet Sire, our master of presentation and plating. Explore the visual appeal of gastronomy as Marcus unveils the secrets behind creating stunning dishes that are as pleasing to the eyes as they are to the palate.</p>
+            </div>
+        </div>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Zara Delight. All rights reserved.</p>
-  </footer>
+</main>
+
+<footer>
+  <p>Zara Delight &copy; 2024 - Vincent Moore</p>
+  <p>Last Modification: <span id="last-modification-date"></span></p>
+
+    <p><a href="siteplan.html">Site Plan</a></p>
+    <p><a href="terms-and-services.html">Terms and Services</a></p>
+    <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="Instagram icon">
+        </a>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+<script>
+  document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
+</script>
 </body>
 
 </html>
