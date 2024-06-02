@@ -1,30 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sofia+Sans+Extra+Condensed:wght@600&display=swap');
 
 :root {
-  /* change the values below to your colors from your palette */
+  /* Change the values below to your colors from your palette */
   --primary-color: #e1dee3;
   --secondary-color: #889ec7;
   --accent1-color: #429ab4;
   --accent2-color: #3a4f41;
   --accent3-color: #d5a18e;
-  
-  /* change the values below to your chosen font(s) */
-  --heading-font: "Roboto", sans-serif;
-  --paragraph-font: "Sofia Sans Extra Condensed", sans-serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: black;  /* headlines on a white background */ 
-  --headline-color-on-color: black; /* headlines on a colored background */ 
-  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #e1dee3;
+  /* Change the values below to your chosen font(s) */
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Sofia Sans Extra Condensed', sans-serif;
+
+  /* These colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: black; /* Headlines on a white background */
+  --headline-color-on-color: black; /* Headlines on a colored background */
+  --paragraph-color-on-white: black; /* Paragraph text on a white background */
+  --paragraph-color-on-color: white; /* Paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
   --nav-link-color: white;
-  --nav-background-color: #3a4f41;
-  --nav-hover-link-color: #429ab4;
-  --nav-hover-background-color: #e1dee3;
+  --nav-background-color: var(--accent2-color);
+  --nav-hover-link-color: var(--accent1-color);
+  --nav-hover-background-color: var(--primary-color);
 }
 
-/*  Look around below...but DON'T CHANGE ANYTHING! */
+/* Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
   max-width: 1200px;
@@ -138,7 +138,8 @@ nav a:hover {
   justify-content: center;
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
+  grid-template-areas: 
+    ". . home home . ."
     ". . . top . ."
     ". left left right right ."
     "page2 page2 . . page3 page3";

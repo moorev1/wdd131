@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-  <meta charset="utf-8">
-  <title>Contact Us - Zara Delight</title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Contact Us - Zara Delight</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-  <nav>
-    <div class="nav-links">
-      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
-      <a href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
-      <a class="active" href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+    <nav class="navigation">
+        <a href="index.html" class="nav-link">
+            <img src="images/logo.jpeg" alt="Logo image" class="logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
+            <a href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
+            <a class="active" href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        </div>
+    </nav>
 
-    </div>
-  </nav>
-  <header>
-    <h1>Contact Us</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <p>We'd love to hear from you! Whether you have a question, feedback, or a recipe to share, feel free to reach out to us.</p>
-    </section>
-    <section>
-      <h2>Contact Form</h2>
-      <form action="submit-form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>Zara Delight &copy; 2024 - Vincent Moore</p>
-    <p>Last Modification: <span id="last-modification-date"></span></p>
+    <header>
+        <div id="home1">
+            <div id="home1-box">
+                <img src="images/ben.jpg" alt="Contact Us" class="home1">
+            </div>
+        </div>
+    </header>
 
-      <p><a href="siteplan.html">Site Plan</a></p>
-      <p><a href="terms-and-services.html">Terms and Services</a></p>
-      <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-      <div class="social">
-          <a href="https://facebook.com" target="_blank">
-              <img src="images/facebook.png" alt="Facebook icon">
-          </a>
-          <a href="https://twitter.com" target="_blank">
-              <img src="images/twitter.png" alt="Twitter icon">
-          </a>
-          <a href="https://instagram.com" target="_blank">
-              <img src="images/instagram.png" alt="Instagram icon">
-          </a>
-      </div>
-  </footer>
-  <script src="js/script.js"></script>
-<script>
-    document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
-</script>
+    <main>
+        <section class="contact-section">
+            <header>
+                <h2>Contact Us</h2>
+            </header>
+            <p>If you have any questions or would like to get in touch, please fill out the form below. We'd love to hear from you!</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Zara Delight &copy; 2024 - Vincent Moore</p>
+        <p>Last Modification: <span id="last-modification-date"></span></p>
+        <p><a href="attributions.html">Resource Reference/Attributions</a></p>
+        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+            <p><a href="siteplan.html">Site Plan</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
+            let reviewCount = localStorage.getItem('reviewCount');
+            if (!reviewCount) {
+                reviewCount = 0;
+            }
+            reviewCount++;
+            localStorage.setItem('reviewCount', reviewCount);
+        });
+    </script>
 </body>
-
 </html>

@@ -1,413 +1,387 @@
+/* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sofia+Sans+Extra+Condensed:wght@600&display=swap');
+
+/* Global Styles */
+:root {
+    /* Color Palette */
+    --primary-color: #e1dee3;
+    --secondary-color: #889ec7;
+    --accent1-color: #429ab4;
+    --accent2-color: #3a4f41;
+    --accent3-color: #d5a18e;
+    --nav-background-color: #3a4f41;
+    --nav-hover-background-color: #b9314f;
+    --nav-hover-link-color: #ffffff;
+    --paragraph-color: #333333;
+    --paragraph-color-on-color: #ffffff;
+    --header-background-color: #d5a18e;
+    --footer-background-color: #dec3be;
+    --footer-color: #333333;
+
+    /* Font Choices */
+    --heading-font: "Roboto", sans-serif;
+    --paragraph-font: "Sofia Sans Extra Condensed", sans-serif;
+
+    /* Text Colors */
+    --headline-color-on-white: black;
+    --headline-color-on-color: black;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #e1dee3;
+    --nav-link-color: white;
+}
 
 /* General Styles */
 body {
-    font-family: 'Roboto', 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 22px;
     margin: 0;
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    color: var(--paragraph-color);
     padding: 0;
-    background-color: #e1dee3;
-    color: #333;
+    box-sizing: border-box;
 }
 
-main {
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
 }
 
-hr {
-    border: 1px solid #ddd;
+p {
+    font-family: var(--paragraph-font);
 }
 
-h2, h3 {
-    font-family: 'Helvetica', sans-serif;
-    color: #333;
+header,
+main,
+footer {
+    padding: 2em;
 }
 
-/* Message Box Styles */
-.elvis-msg-container,
-.brooke-msg-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-}
-.newsletter {
+header {
+    background-color: var(--header-background-color);
     text-align: center;
-    background-color: #f8f8f8;
-    padding: 20px;
 }
 
-.newsletter form {
-    margin-top: 20px;
+footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-color);
+    text-align: center;
 }
 
-.newsletter input {
-    padding: 10px;
-    width: 60%;
-    margin-right: 10px;
-}
-
-.newsletter button {
-    padding: 10px;
-    background-color: #3a4f41;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-
-.elvis,
-.brook {
-    width: 400px;
-    box-shadow: 5px 5px 10px #6f7364;
-    border-radius: 8px;
-}
-
-.msg,
-.msg-brooke {
-    flex: 1;
-    width: 30%;
-    box-shadow: 5px 5px 10px #6f7364;
-    background-color: #d5a18e;
-    color: #fff;
-    padding: 35px;
-    text-align: left;
-    border-radius: 8px;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Hover Effect for Links */
-a:hover {
-    color: #429ab4;
-}
-
-/* ... (existing styles) ... */
-
-/* Navigation styles */
+/* Navigation Styles */
 .navigation {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+}
+
+.logo {
+    width: 100px;
 }
 
 .nav-links {
     display: flex;
-    gap: 2em;
 }
 
-nav {
-    background-color: #3a4f41;
-    padding: 1em;
-}
-
-nav a {
+.nav-links a {
+    padding: 10px 15px;
     text-decoration: none;
-    color: #fcfbfb;
-    margin-right: 2em;
+    color: var(--nav-link-color);
+    font-size: 18px;
 }
 
-nav .logo {
-    max-width: 100px;
+.nav-links a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    border-radius: 5px;
 }
 
-/* Header styles */
-header {
-    color: rgb(20, 67, 100);
-    padding: 1em;
-    text-align: center;
+.active {
+    background-color: var(--accent2-color);
+    color: white;
+    border-radius: 5px;
 }
 
-header h1 {
-    font-size: 24px;
-    font-family: 'Roboto';
-}
-
-/* Main Content styles */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2em;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    text-align: center;
-}
-
+/* Home Section Styles */
 #home1 {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 300px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
 }
 
 #home1-box {
-    width: 100vw;
-    height: 100%;
-    overflow: hidden;
+    max-width: 600px;
+    max-height: 300px;
 }
 
-#home1-box img {
+.home1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    border-radius: 8px;
 }
 
+/* Recipes Section Styles */
 .recipes-section {
-    background-color: #E1DEE3;
+    background-color: var(--primary-color);
     padding: 2em;
-    margin-left: -7em;
-    margin-right: -7em;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-.recipe-header {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #333;
 }
 
 .image-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-}
-
-.recipe-card {
-    width: 30%;
-    margin: 10px;
-    padding: 15px;
-    background-color: #3a4f41;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.recipe-card:hover {
-    transform: scale(1.05);
-}
-
-.recipe-card img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.recipe-description {
-    margin-top: 10px;
-    color: #666;
-}
-
-.chef-container,
-.chef-container2 {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.chef-info,
-.chef-info2 {
-    max-width: 400px;
-    text-align: center;
-}
-
-.chef-info p,
-.chef-info2 p {
-    margin: 0;
-}
-
-.chef-container img,
-.chef-container2 img {
-    width: 600px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Responsive styles... */
-
-.left-box,
-.right-box {
+.box {
     flex: 1;
-    padding: 10px;
+    margin: 0 10px;
+    padding: 1em;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    color: var(--paragraph-color-on-color);
 }
 
 .center-box {
-    margin: 0 10%;
-    overflow: hidden;
+    flex: 2;
+    margin: 0 10px;
 }
 
 .center-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    max-height: 450px;
-    transform: rotate(90deg);
+    border-radius: 8px;
 }
 
 .text-under-image {
-    text-align: center;
-    padding: 10px;
-    background-color: #ffffff;
+    margin-top: 10px;
+    color: #ffffff;
 }
 
-.text-box {
-    padding: 10px;
-}
-
+/* Join Us Section Styles */
 .join-us-section {
-    text-align: center;
-    margin-top: 1em;
-}
-
-button.join-us-button {
-    background-color: #3a4f41;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-}
-
-.section-wireframes {
-    text-align: center;
-    margin: 2em 0;
-}
-
-.featured-recipes-section {
+    background-color: var(--accent1-color);
     padding: 2em;
-    background-color: #55d6be;
-    color: #429ab4;
-}
-/* Add this to your existing CSS file or in a new style block in the head */
-
-.join-us-section {
+    color: var(--paragraph-color-on-color);
     text-align: center;
-    padding: 20px;
-}
-
-.join-us-section h2 {
-    font-size: 24px;
-}
-
-.join-us-section p {
-    font-size: 16px;
-    margin-bottom: 20px;
 }
 
 .join-us-button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    color: white;
+    background-color: var(--accent2-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-/* Media query for responsiveness */
-@media screen and (max-width: 768px) {
-    .join-us-section {
-        padding: 10px;
-    }
-
-    .join-us-section h2 {
-        font-size: 20px;
-    }
-
-    .join-us-section p {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .join-us-button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
+.join-us-button:hover {
+    background-color: var(--accent3-color);
 }
 
-
-.recipe-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
+/* Testimonials Section Styles */
 .testimonials-section {
-    background-color: #889ec7;
-    color: black;
+    background-color: #f9f9f9;
     padding: 2em;
 }
 
 .testimonial-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .testimonial-card {
-    width: 45%;
+    flex: 0 1 300px;
     margin: 10px;
-    padding: 15px;
-    background-color: #e1dee3;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #3a4f41;
-    color: white;
+.testimonial-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial-card p:last-child {
+    margin-top: 1em;
+    font-style: italic;
+}
+
+/* Additional Styles */
+.intro-section {
     text-align: center;
-    flex-wrap: wrap;
-    padding: 1em;
+    margin-bottom: 2rem;
 }
 
-footer p {
-    margin: 0;
+.intro-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-footer a {
-    color: white;
+.intro-section p {
+    font-size: 1.125rem;
+    line-height: 1.6;
 }
 
-.social {
+.elvis-msg-container,
+.brooke-msg-container {
     display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.social a {
-    margin-right: 10px;
+.elvis-msg-container img,
+.brooke-msg-container img {
+    width: 50%;
+    border-radius: 8px;
+    margin-right: 1rem;
 }
 
-.social img {
-    max-width: 30px;
-    margin: 0 5px;
+.elvis-msg-container .msg,
+.brooke-msg-container .msg {
+    flex: 1;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    main {
+.elvis-msg-container h2,
+.brooke-msg-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.elvis-msg-container .msg-container p,
+.brooke-msg-container p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    font-size: 1.125rem;
+}
+
+/* Chef Info Section */
+.chef-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chef-image {
+    width: 600px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.chef-info {
+    flex: 1;
+}
+
+.chef-info p {
+    text-align: justify;
+}
+
+.chef-info p strong {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chef-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+
+/* Small screens (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header {
         padding: 1em;
     }
 
-    .recipe-container,
-    .testimonial-container {
-        flex-direction: column;
+    .logo {
+        width: 80px;
     }
 
-    .recipe-card,
-    .testimonial-card {
-        width: 100%;
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .home1 {
+        height: 200px;
+    }
+
+    .chef-image {
+        width: 400px;
+    }
+}
+
+/* Medium screens (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .home1 {
+        height: 250px;
+    }
+
+    .chef-image {
+        width: 500px;
+    }
+}
+
+/* Large screens (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .home1 {
+        height: 300px;
+    }
+
+    .chef-image {
+        width: 600px;
+    }
+}
+
+
+/* Extra large screens (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nav-links a {
+        font-size: 22px;
+    }
+
+    .home1 {
+        height: 350px;
+    }
+
+    .chef-image {
+        width: 700px;
     }
 }

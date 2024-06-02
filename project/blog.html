@@ -1,36 +1,23 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Blog</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Zara Delight</title>
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* Add any custom styles here */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Add more styles as needed */
-        /* ... */
-    </style>
 </head>
-
 <body>
     <nav class="navigation">
         <a href="index.html" class="nav-link">
-            <img src="images/logo.jpeg" alt="Logo image" class="logo">
+            <img src="images/logo.jpeg" alt="Zara Delight Logo" class="logo">
         </a>
         <div class="nav-links">
-          <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-          <a class="active" href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
-          <a href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
-          <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-            </div>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a class="active" href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
+            <a href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
+            <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        </div>
     </nav>
 
     <main>
@@ -41,7 +28,6 @@
                 in a world where each dish tells a unique story, bringing you closer to the heart of gastronomy.</p>
             <p>Discover the essence of our culinary experiences through captivating narratives and stunning visuals.</p>
         </section>
-        
 
         <div class="elvis-msg-container">
             <img class="elvis" src="images/rice.jpeg" alt="Elvis image for page 3">
@@ -54,8 +40,8 @@
         <div class="brooke-msg-container">
             <section class="msg-brooke">
                 <h2>A Culinary Voyage by Chef Sire</h2>
-        <p>Join Chef Sire as she explores the art of gastronomy. From farm-to-table experiences to unique cooking
-            techniques, discover the secrets that make each dish a masterpiece.</p>
+                <p>Join Chef Sire as she explores the art of gastronomy. From farm-to-table experiences to unique cooking
+                    techniques, discover the secrets that make each dish a masterpiece.</p>
             </section>
             <img class="brook" src="images/stew.jpeg" alt="Brooke image for page 3">
         </div>
@@ -71,8 +57,8 @@
     </main>
 
     <footer>
-      <p>Zara Delight &copy; 2024 - Vincent Moore</p>
-      <p>Last Modification: <span id="last-modification-date"></span></p>
+        <p>Zara Delight &copy; 2024 - Vincent Moore</p>
+        <p>Last Modification: <span id="last-modification-date"></span></p>
 
         <p><a href="siteplan.html">Site Plan</a></p>
         <p><a href="terms-and-services.html">Terms and Services</a></p>
@@ -90,9 +76,18 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-  <script>
-      document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
-  </script>
+    <script>
+        document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
+        document.addEventListener('DOMContentLoaded', function() {
+            let reviewCount = localStorage.getItem('reviewCount');
+            if (!reviewCount) {
+                reviewCount = 0;
+            }
+            reviewCount++;
+            localStorage.setItem('reviewCount', reviewCount);
+            document.getElementById('review-count').textContent = reviewCount;
+        });
+    </script>
 </body>
 
 </html>
