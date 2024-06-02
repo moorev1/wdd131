@@ -8,72 +8,26 @@
 </head>
 <body>
     <div class="confirmation-container">
-        <h1>Thank You for Your Review!</h1>
-        <p>You have completed <span id="review-count"></span> reviews.</p>
+        <h1>Thank you for your review!</h1>
+        <p>You have submitted <span id="review-count"></span> reviews.</p>
     </div>
     <footer>
-        <p>©2024 🌺 Vincent Moore🌺 Ghana</p>
+        <p>&copy; 2024 🌺 Vincent Moore 🌺 Ghana</p>
         <p>Last Modification: <span id="last-modification-date"></span></p>
     </footer>
-    <!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <meta charset="utf-8">
-    <title>Recipes - Zara Delight</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <nav class="navigation">
-        <a href="index.html" class="nav-link">
-            <img src="images/logo.jpeg" alt="Logo image" class="logo">
-        </a>
-        <div class="nav-links">
-          <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-          <a class="active" href="recipes.html"><i class="fa fa-fw fa-cutlery"></i> Recipes</a>
-          <a href="blog.html"><i class="fa fa-fw fa-book"></i> Blog</a>
-          <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-            </div>
-    </nav>
+    <script>
+        // Increment the review counter in localStorage
+        if (localStorage.getItem('reviewCount')) {
+            localStorage.setItem('reviewCount', parseInt(localStorage.getItem('reviewCount')) + 1);
+        } else {
+            localStorage.setItem('reviewCount', 1);
+        }
 
-    <header>
-        <div id="home1">
-            <div id="home1-box">
-                <img src="images/rice.jpeg" alt="Recipe Header" class="home1">
-            </div>
-        </div>
-    </header>
+        // Display the review count
+        document.getElementById('review-count').textContent = localStorage.getItem('reviewCount');
 
-    <main>
-        <section class="recipes-section">
-            <header>
-                <h2>Our Top Recipes</h2>
-            </header>
-            <p>Discover our curated collection of recipes. Whether you're looking for something quick and easy or a gourmet meal, we have something for everyone.</p>
-            <div class="recipe-list" id="recipe-list">
-                <!-- Recipes will be loaded here by JavaScript -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Zara Delight &copy; 2024 - Vincent Moore</p>
-        <p>Last Modification: <span id="last-modification-date"></span></p>
-        <p><a href="attributions.html">Resource Reference/Attributions</a></p>
-        <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="Facebook icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="Twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="Instagram icon">
-            </a>
-        <p><a href="siteplan.html">site plan</a></p>
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
+        // Display the last modification date
+        document.getElementById('last-modification-date').textContent = new Date(document.lastModified).toLocaleString();
+    </script>
 </body>
 </html>

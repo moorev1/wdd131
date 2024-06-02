@@ -7,24 +7,19 @@
     <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
-    <!-- Navigation Bar (Hidden) -->
-    <nav class="hidden-nav">
-        <ul>
-            <li><a href="form.html">Form</a></li>
-            <li><a href="review.html">Review</a></li>
-        </ul>
-    </nav>
-
     <div class="form-container">
-        <h1>Product Review</h1>
+        <div class="highlight-box">
+            <h1>Product Review</h1>
+        </div>
         <form id="review-form" action="review.html" method="get">
             <!-- Product Name -->
             <label for="product-name">Product Name</label>
             <select id="product-name" name="product-name" required>
-                <option value="Product A">Product A</option>
-                <option value="Product B">Product B</option>
-                <option value="Product C">Product C</option>
                 <option value="" disabled selected>Select a Product ...</option>
+                <option value="A">Product A</option>
+                <option value="B">Product B</option>
+                <option value="C">Product C</option>
+                <option value="D">Product D</option>
             </select>
 
             <!-- Overall Rating -->
@@ -49,13 +44,13 @@
             <!-- Useful Features -->
             <label>Which features did you find useful in the product? <small>(Check all that apply)</small></label>
             <div class="checkbox-group">
-                <input type="checkbox" id="feature1" name="useful-features" value="Durability">
+                <input type="checkbox" id="feature1" name="useful-features[]" value="Durability">
                 <label for="feature1">Durability</label>
-                <input type="checkbox" id="feature2" name="useful-features" value="Ease of Use">
+                <input type="checkbox" id="feature2" name="useful-features[]" value="Ease of Use">
                 <label for="feature2">Ease of Use</label>
-                <input type="checkbox" id="feature3" name="useful-features" value="Performance">
+                <input type="checkbox" id="feature3" name="useful-features[]" value="Performance">
                 <label for="feature3">Performance</label>
-                <input type="checkbox" id="feature4" name="useful-features" value="Design">
+                <input type="checkbox" id="feature4" name="useful-features[]" value="Design">
                 <label for="feature4">Design</label>
             </div>
 
@@ -72,12 +67,12 @@
         </form>
     </div>
     <footer>
-        <p>©2024 🌺 Vincent Moore 🌺 Ghana</p>
+        <p>&copy; 2024 🌺 Vincent Moore 🌺 Ghana</p>
         <p>Last Modification: <span id="last-modification-date"></span></p>
     </footer>
     <script src="js/script.js"></script>
     <script>
-        document.getElementById('last-modification-date').textContent = new Date().toLocaleString();
+        document.getElementById('last-modification-date').textContent = new Date(document.lastModified).toLocaleString();
     </script>
 </body>
 </html>

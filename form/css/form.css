@@ -10,10 +10,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-.hidden-nav {
-    display: none;
-}
-
 
 .form-container, .confirmation-container {
     background-color: #E0DBE3;
@@ -60,8 +56,6 @@ input[type="checkbox"] {
     margin-bottom: 20px;
 }
 
-/* Other CSS code remains unchanged */
-
 input[type="submit"] {
     background-color: #3D0C2E;
     color: rgb(226, 93, 93);
@@ -70,20 +64,13 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 input[type="submit"]:hover {
-    background-color: #FFD700; /* Highlight with a gold color similar to selected stars */
-    color: #3D0C2E; /* Change text color to match the theme */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box-shadow for a 3D effect */
-}
-
-/* Highlight the product preview button */
-input[type="submit"].highlighted {
-    background-color: #FFD700; /* Gold background color */
-    color: #3D0C2E; /* Text color to match the theme */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box-shadow for 3D effect */
+    background-color: #FFD700;
+    color: #3D0C2E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .rating {
@@ -121,4 +108,13 @@ footer {
     max-width: 400px;
     margin: 0 auto;
     color: #fff;
+}
+
+/* Styling for the highlighted box */
+.highlight-box {
+    background-color: #3D0C2E;
+    color: rgb(226, 93, 93);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
 }
